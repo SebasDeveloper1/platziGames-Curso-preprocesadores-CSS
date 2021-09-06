@@ -1,0 +1,15 @@
+//-colocar variables en la parte superior antes de cualquier código html
+-var titulo = "Platzi Games"
+-var titulos = ["Titulo principal", "Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
+-var usuario = "canibal"
+-var enlaces = ["Acerca de", "Noticias", "Contacto"]
+-var asideTitle = "Menu"
+-var aside = ["Acerca de", "Noticias", "Contacto"]
+
+//-Mixin (usados para reutilizar bloques de codigo de una manera mas optima)
+mixin caja(imagen,titulo,contenido)
+    .caja
+        .caja__imagen: img(src="./images/"+imagen)
+        .caja__contenido 
+            h3=titulo
+            p=contenido

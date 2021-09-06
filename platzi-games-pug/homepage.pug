@@ -1,0 +1,14 @@
+extend componentes/plantilla.pug
+block contenidos
+    main
+        aside.aside__homepage
+            h1.aside__title #{asideTitle}
+            ul.aside__list
+                each asid in aside
+                    li=asid
+        section.section__homepage
+            div.div__homepage
+                H1.section__title #{titulos[0]}
+                p.section__paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sit tenetur ad impedit repellat recusandae esse quidem nemo quis labore nulla alias suscipit quasi voluptatum doloremque, natus dignissimos eaque reprehenderit?
+                p.section__paragraph Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus nam itaque provident, architecto molestiae doloribus quas ab impedit repellat illo, accusamus ducimus? Iste, cum placeat? Harum sint ut quidem nam.
+                a.boton(href="./landing.html") Ver más
