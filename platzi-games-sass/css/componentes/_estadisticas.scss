@@ -1,0 +1,23 @@
+.estadistica--perfil {
+    display: flex;
+    width: 60%;
+    height: 90px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    @include caja;
+    @include titulos($font-two);
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    span {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        color: get-opacity($color-primary, 0.5);
+    }
+}
