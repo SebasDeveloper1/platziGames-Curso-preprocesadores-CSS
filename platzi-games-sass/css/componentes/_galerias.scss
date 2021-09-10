@@ -1,0 +1,29 @@
+.galeria {
+    width: 60%;
+    min-height: 250px;
+    margin: 10px auto;
+    padding: 20px 0 0 30px;
+    justify-content: space-evenly;
+    @include caja;
+
+    &__foto-principal {
+        float: left;
+        margin-right: 10px;
+    }
+
+    &__fotos-adicionales {
+        height: 70px;
+        margin: 0 5px 5px 0;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+        font-weight: 600;
+        @include titulos($font-two);
+
+    }
+
+    img {
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,54 @@
+$font-one: 'Lato',
+sans-serif;
+$font-two: 'Oswald',
+sans-serif;
+$color-primary: #333333;
+$color-light: #ffffff;
+$color-secundary: #8842da;
+$color-variation: #012179;
+
+@mixin caja {
+    border-radius: 20px;
+    box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.50);
+    color: $color-primary;
+    background-color: $color-light;
+}
+
+@mixin titulos($font) {
+    @if $font==$font-one {
+        font-family: $font-one;
+    }
+
+    @else {
+        font-family: $font-two;
+        text-transform: uppercase;
+    }
+}
+
+@function get-opacity($color, $nivel) {
+    @return rgba($color, $nivel);
+}
+
+@each $header,
+$size in (h2: 20px, h3: 12px, span: 12px) {
+    #{$header} {
+        font-size: $size;
+        margin: 0;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    @include titulos($font-one);
+
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
